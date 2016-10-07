@@ -14,8 +14,7 @@ angular.module('gestionReunionAngularApp')
       'AngularJS',
       'Karma'
     ];
-
-    $scope.testt='tetsttttt';
+    
     $scope.projects = [
     	{
     		name: 'Project 1',

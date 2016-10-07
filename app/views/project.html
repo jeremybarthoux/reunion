@@ -1,15 +1,20 @@
-<p>This is the project {{projectId}} view.</p>
+<div>
+	<p>This is the projectt {{projectId}} view.</p>
 
-<ul>
-	<li ng-repeat="reunion in renuions">
-		<h2>
-			<a ng-href="#project/{{projectId}}/reunion/{{reunion.id}}">
-				{{reunion.name}}
-			</a>
-		</h2>
-		<p>{{reunion.date}}</p>
+	<table class="table">
 
-	</li>
+		<tr ng-repeat="reunion in reunions">
+			<td>
+				<a ng-href="#project/{{projectId}}/reunion/{{reunion.id}}">
+					{{reunion.name}}
+				</a>
+			</td>
+			<td>
+				<p>{{reunion.date}}</p>
+			</td>
 
-</ul>
+		</tr>
+
+	</table>
+</div>
 

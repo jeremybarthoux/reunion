@@ -2,16 +2,19 @@
 
 /**
  * @ngdoc function
- * @name gestionReunionAngularApp.controller:AboutCtrl
+ * @name gestionReunionAngularApp.controller:ReunionCtrl
  * @description
- * # AboutCtrl
+ * # ReunionCtrl
  * Controller of the gestionReunionAngularApp
  */
 angular.module('gestionReunionAngularApp')
-  .controller('AboutCtrl', function () {
+  .controller('ReunionCtrl', function ($scope, $routeParams) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
+
+    $scope.reunionId = $routeParams.reunionId;
+
   });

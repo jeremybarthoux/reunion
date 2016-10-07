@@ -19,15 +19,15 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
-      })
       .when('/project/:projectId', {
         templateUrl: 'views/project.html',
         controller: 'ProjectCtrl',
         controllerAs: 'project'
+      })
+      .when('/project/:projectId/reunion/:reunionId', {
+        templateUrl: 'views/reunion.html',
+        controller: 'ReunionCtrl',
+        controllerAs: 'reunion'
       })
       .otherwise({
         redirectTo: '/'

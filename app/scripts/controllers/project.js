@@ -17,7 +17,19 @@ angular.module('gestionReunionAngularApp')
 
     $scope.projectId = $routeParams.projectId;
 
-    $scope.renuions = [
+    // dynamic with $http (XHRrequest) with projectId in params
+    // EXEMPLE :
+	// $http({
+	// 	method: 'GET',
+	// 	url: 'api/project/'+ $routeParams.projectId
+	// }).then(function successCallback(response) {
+	// 	$scope.reunions = response;
+	// }, function errorCallback(response) {
+	// 	alert('Error load data : ' + response );
+	// });
+
+	// Fictitious data
+    $scope.reunions = [
     	{
     		id: 1,
     		name: 'Reunion 1',
