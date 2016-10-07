@@ -1,0 +1,15 @@
+<p>This is the project {{projectId}} view.</p>
+
+<ul>
+	<li ng-repeat="reunion in renuions">
+		<h2>
+			<a ng-href="#project/{{projectId}}/reunion/{{reunion.id}}">
+				{{reunion.name}}
+			</a>
+		</h2>
+		<p>{{reunion.date}}</p>
+
+	</li>
+
+</ul>
+
