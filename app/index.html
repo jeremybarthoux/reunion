@@ -21,28 +21,25 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
+    <div ng-controller="HeaderCtrl" class="header">
       <div class="navbar navbar-default" role="navigation">
         <div class="container">
           <div class="navbar-header">
-
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
-            <a class="navbar-brand" href="#/">gestionReunionAngular</a>
-          </div>
-
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
-
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#/">Meeting App</a>
+        </div>
+          <div class="collapse navbar-collapse"> 
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/project/1">project 1</a></li>
-              <li><a ng-href="#/project/2">project 2</a></li>
+              <li ng-class="isActive('list')"><a ng-if="isLogin" ng-href="#/">Projects list</a></li>                
+              <li ng-class="isActive('project')"><a ng-if="projectUrl.active" ng-href="#/project/{{ projectUrl.id }}">Project : {{ projectUrl.id }}</a></li>  
+              <li ng-class="isActive('reunion')"><a ng-if="reunionUrl.active" ng-href="#/project/{{ projectUrl.id }}/reunion/{{ reunionUrl.id }}">Meeting : {{ reunionUrl.id }}</a></li>                
             </ul>
+            <button ng-if="isLogin" ng-click="logout()" class="btn btn-info pull-right logout">Logout</button>
           </div>
         </div>
       </div>
@@ -54,7 +51,7 @@
 
     <div class="footer">
       <div class="container">
-        <p>Tegona test script</p>
+        <p>Meeting App</p>
       </div>
     </div>
 
@@ -84,6 +81,7 @@
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/project.js"></script>
         <script src="scripts/controllers/reunion.js"></script>
+        <script src="scripts/controllers/login.js"></script>
         <!-- endbuild -->
 </body>
 </html>

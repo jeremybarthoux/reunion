@@ -2,20 +2,21 @@
 
 /**
  * @ngdoc function
- * @name gestionReunionAngularApp.controller:ReunionCtrl
+ * @name gestionReunionAngularApp.controller:LoginCtrl
  * @description
- * # ReunionCtrl
+ * # LoginCtrl
  * Controller of the gestionReunionAngularApp
  */
 angular.module('gestionReunionAngularApp')
-  .controller('ReunionCtrl', function ($scope, $routeParams) {
+  .controller('LoginCtrl', function ($scope, $rootScope, $location) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-    
-    $scope.reunionId = $routeParams.reunionId;
-    $scope.projectId = $routeParams.projectId;
 
+    $scope.connect = function() {
+        $rootScope.tokken = true;
+        $location.path('/');
+    };
   });

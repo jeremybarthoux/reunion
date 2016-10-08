@@ -1,12 +1,14 @@
-# gestion-reunion-angular
+# Gestion Reunion AngularJS
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.15.1.
+## Step 1 - 1.5H
+Yo generator (https://github.com/yeoman/generator-angular)
 
-## Build & development
+## Step 2 - 0.5H
 
-Run `grunt` for building and `grunt serve` for preview.
+Routes generator (project + reunion) then add params url (projectId + reunionId) + start styles (bootstrap) 
 
-## Testing
+## Step 3 - 1.5H
 
-Running `grunt test` will run the unit tests with karma.
+Reformat Header + Navigation + start login proccess
+
+
