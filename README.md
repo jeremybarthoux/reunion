@@ -1,5 +1,7 @@
 # Gestion Reunion AngularJS
 
+-Render on http://jeremybarthoux.com/ref/reunion-
+
 ## Step 1 - 1.5H
 Yo generator (https://github.com/yeoman/generator-angular)
 

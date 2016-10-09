@@ -8,7 +8,7 @@
  * Controller of the gestionReunionAngularApp
  */
 angular.module('gestionReunionAngularApp')
-  .controller('ProjectCtrl', function ($scope, $routeParams, $location) {
+  .controller('ProjectCtrl', function ($scope, $routeParams, $location, $rootScope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -31,24 +31,26 @@ angular.module('gestionReunionAngularApp')
         {
             id: 1,
             name: 'Manager metting',
-            date: '10-10-2016'
+            date: '2016-10-03T08:00:57.984Z'
         },
         {
             id: 2,
             name: 'Coffee time',
-            date: '05-10-2016'
+            date: '2016-15-03T06:30:57.984Z'
         },
         {
             id: 3,
             name: 'Budget metting',
-            date: '20-10-2016'
+            date: '2016-20-03T14:59:57.984Z'
         },
         {
             id: 4,
             name: 'Debriefing',
-            date: '30-10-2016'
+            date: '2016-22-03T16:59:57.984Z'
         }
     ];
+
+    $rootScope.reunionList = $scope.reunions;
 
     $scope.projectId = $routeParams.projectId;
 

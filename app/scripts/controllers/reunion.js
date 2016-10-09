@@ -8,16 +8,14 @@
  * Controller of the gestionReunionAngularApp
  */
 angular.module('gestionReunionAngularApp')
-  .controller('ReunionCtrl', function ($scope, $routeParams) {
+  .controller('ReunionCtrl', function ($scope, $routeParams, $rootScope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-    
-    $scope.reunionId = $routeParams.reunionId;
-    $scope.projectId = $routeParams.projectId;
 
+    $scope.reunionName = $rootScope.reunionList[$routeParams.reunionId - 1].name;
 
     $scope.users = [
 		{
@@ -26,39 +24,39 @@ angular.module('gestionReunionAngularApp')
 			email: 'gf@few.com'
 		},
 		{
-			id: 1,
+			id: 2,
 			name: 'shefd',
 			email: 'gf@few.com'
 		},
 		{
-			id: 1,
-			name: 'shefd',
-			email: 'gf@few.com'
-		},
-
-		{
-			id: 1,
-			name: 'shefd',
-			email: 'gf@few.com'
-		},
-		{
-			id: 1,
+			id: 3,
 			name: 'shefd',
 			email: 'gf@few.com'
 		},
 
 		{
-			id: 1,
+			id: 4,
 			name: 'shefd',
 			email: 'gf@few.com'
 		},
 		{
-			id: 1,
+			id: 5,
+			name: 'shefd',
+			email: 'gf@few.com'
+		},
+
+		{
+			id: 6,
+			name: 'shefd',
+			email: 'gf@few.com'
+		},
+		{
+			id: 7,
 			name: 'shefd',
 			email: 'gf@few.com'
 		}
 	];
-	
+
     $scope.notes = [
 		{
 			id: 1,

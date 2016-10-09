@@ -1,4 +1,4 @@
-<div>
+<div id="meetingLsit">
 	<h1>Project {{projectId}} : meetings list</h1>
 
 	<table class="table table-hover">
@@ -22,7 +22,7 @@
 					</a>
 				</td>
 				<td>
-					<p>{{reunion.date}}</p>
+					<p class="date">{{reunion.date | date:"MM/dd/yyyy 'at' h:mma"}}</p>
 				</td>
 
 			</tr>
