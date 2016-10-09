@@ -2,20 +2,20 @@
 
 /**
  * @ngdoc function
- * @name gestionReunionAngularApp.controller:ReunionCtrl
+ * @name MeetingAngularApp.controller:meetingCtrl
  * @description
- * # ReunionCtrl
- * Controller of the gestionReunionAngularApp
+ * # meetingCtrl
+ * Controller of the MeetingAngularApp
  */
-angular.module('gestionReunionAngularApp')
-  .controller('ReunionCtrl', function ($scope, $routeParams, $rootScope) {
+angular.module('MeetingAngularApp')
+  .controller('MeetingCtrl', function ($scope, $routeParams, $rootScope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
 
-    $scope.reunionName = $rootScope.reunionList[$routeParams.reunionId - 1].name;
+    $scope.meetingName = $rootScope.meetingList[$routeParams.meetingId - 1].name;
 
     $scope.users = [
 		{

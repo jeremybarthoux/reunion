@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="gestionReunionAngularApp">
+  <body ng-app="MeetingAngularApp">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -37,7 +37,7 @@
             <ul class="nav navbar-nav">
               <li ng-class="isActive('list')"><a ng-if="isLogin" ng-href="#/">Projects list</a></li>                
               <li ng-class="isActive('project')"><a ng-if="projectUrl.active" ng-href="#/project/{{ projectUrl.id }}">Project : {{ projectUrl.id }}</a></li>  
-              <li ng-class="isActive('reunion')"><a ng-if="reunionUrl.active" ng-href="#/project/{{ projectUrl.id }}/reunion/{{ reunionUrl.id }}">Meeting : {{ reunionUrl.id }}</a></li>                
+              <li ng-class="isActive('meeting')"><a ng-if="meetingUrl.active" ng-href="#/project/{{ projectUrl.id }}/meeting/{{ meetingUrl.id }}">Meeting : {{ meetingUrl.id }}</a></li>                
             </ul>
             <button ng-if="isLogin" ng-click="logout()" class="btn btn-info pull-right logout">Logout</button>
           </div>
@@ -81,7 +81,7 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/project.js"></script>
-        <script src="scripts/controllers/reunion.js"></script>
+        <script src="scripts/controllers/meeting.js"></script>
         <script src="scripts/controllers/login.js"></script>
         <!-- endbuild -->
 </body>

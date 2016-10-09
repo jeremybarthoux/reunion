@@ -11,18 +11,18 @@
 		</thead>
 		
 		<tbody>
-			<tr ng-repeat="reunion in reunions" ng-click="openReunion(reunion.id)">
+			<tr ng-repeat="meeting in meetings" ng-click="openMeeting(meeting.id)">
 					
 				<td>
-					<h2>{{reunion.id}}</h2>
+					<h2>{{meeting.id}}</h2>
 				</td>
 				<td>
-					<a ng-href="#project/{{projectId}}/reunion/{{reunion.id}}">
-						<h2>{{reunion.name}}</h2>
+					<a ng-href="#project/{{projectId}}/meeting/{{meeting.id}}">
+						<h2>{{meeting.name}}</h2>
 					</a>
 				</td>
 				<td>
-					<p class="date">{{reunion.date | date:"MM/dd/yyyy 'at' h:mma"}}</p>
+					<p class="date">{{meeting.date | date:"MM/dd/yyyy 'at' h:mma"}}</p>
 				</td>
 
 			</tr>

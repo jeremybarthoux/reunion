@@ -1,4 +1,4 @@
-# Gestion Reunion AngularJS
+# Meeting App AngularJS
 
 -Render on http://jeremybarthoux.com/ref/reunion-
 

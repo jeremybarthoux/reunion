@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name gestionReunionAngularApp.controller:MainCtrl
+ * @name MeetingAngularApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the gestionReunionAngularApp
+ * Controller of the MeetingAngularApp
  */
-angular.module('gestionReunionAngularApp')
+angular.module('MeetingAngularApp')
   .controller('MainCtrl', function ($scope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',

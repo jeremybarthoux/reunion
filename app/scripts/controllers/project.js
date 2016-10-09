@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name gestionReunionAngularApp.controller:ProjectCtrl
+ * @name MeetingAngularApp.controller:ProjectCtrl
  * @description
  * # ProjectCtrl
- * Controller of the gestionReunionAngularApp
+ * Controller of the MeetingAngularApp
  */
-angular.module('gestionReunionAngularApp')
+angular.module('MeetingAngularApp')
   .controller('ProjectCtrl', function ($scope, $routeParams, $location, $rootScope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
@@ -21,13 +21,13 @@ angular.module('gestionReunionAngularApp')
     //  method: 'GET',
     //  url: 'api/project/'+ $routeParams.projectId
     // }).then(function successCallback(response) {
-    //  $scope.reunions = response;
+    //  $scope.meetings = response;
     // }, function errorCallback(response) {
     //  alert('Error load data : ' + response );
     // });
 
     // Fictitious data
-    $scope.reunions = [
+    $scope.meetings = [
         {
             id: 1,
             name: 'Manager metting',
@@ -50,12 +50,12 @@ angular.module('gestionReunionAngularApp')
         }
     ];
 
-    $rootScope.reunionList = $scope.reunions;
+    $rootScope.meetingList = $scope.meetings;
 
     $scope.projectId = $routeParams.projectId;
 
-    $scope.openReunion = function(id) {
-        $location.path('project/'+$scope.projectId+'/reunion/'+id);
+    $scope.openMeeting = function(id) {
+        $location.path('project/'+$scope.projectId+'/meeting/'+id);
     };
 
 

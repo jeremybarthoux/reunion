@@ -1,16 +1,17 @@
 {
-  "name": "gestion-reunion-angular",
+  "name": "MeetingAngularApp",
   "version": "0.0.0",
   "dependencies": {
     "angular": "^1.4.0",
     "bootstrap": "^3.2.0",
-    "angular-route": "^1.4.0"
+    "angular-route": "^1.4.0",
+    "angular-sanitize": "^1.4.0"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.0"
   },
   "appPath": "app",
-  "moduleName": "gestionReunionAngularApp",
+  "moduleName": "MeetingAngularApp",
   "overrides": {
     "bootstrap": {
       "main": [

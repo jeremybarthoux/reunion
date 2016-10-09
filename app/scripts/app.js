@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name gestionReunionAngularApp
+ * @name MeetingAngularApp
  * @description
- * # gestionReunionAngularApp
+ * # MeetingAngularApp
  *
  * Main module of the application.
  */
 angular
-  .module('gestionReunionAngularApp', [
+  .module('MeetingAngularApp', [
     'ngRoute',
     'ngSanitize'
   ])
@@ -25,10 +25,10 @@ angular
         controller: 'ProjectCtrl',
         controllerAs: 'project'
       })
-      .when('/project/:projectId/reunion/:reunionId', {
-        templateUrl: 'views/reunion.html',
-        controller: 'ReunionCtrl',
-        controllerAs: 'reunion'
+      .when('/project/:projectId/meeting/:meetingId', {
+        templateUrl: 'views/meeting.html',
+        controller: 'MeetingCtrl',
+        controllerAs: 'meeting'
       })
       .when('/login', {
         templateUrl: 'views/login.html',
@@ -56,7 +56,7 @@ angular
 
       $scope.projectUrl = newPath.length > 1 ? {id:newPath[1], active:true} : {active:false};
 
-      $scope.reunionUrl = newPath.length > 3 ? {id:newPath[3], active:true} : {active:false};
+      $scope.meetingUrl = newPath.length > 3 ? {id:newPath[3], active:true} : {active:false};
 
       $scope.isActive = function (page) {
         var isActive = false;
@@ -67,7 +67,7 @@ angular
           case 'project':
             isActive = newPath.length === 2 ? true : false;
             break;
-          case 'reunion':
+          case 'meeting':
             isActive = newPath.length === 4 ? true : false;
             break;
         }
