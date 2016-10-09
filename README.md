@@ -1,6 +1,6 @@
 # Meeting App AngularJS
 
--Render on http://jeremybarthoux.com/ref/meeting-
+- Render on http://jeremybarthoux.com/ref/meeting -
 
 ## Step 1 - 1.5H
 Yo generator (https://github.com/yeoman/generator-angular)
