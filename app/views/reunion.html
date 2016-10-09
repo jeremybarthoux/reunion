@@ -1,1 +1,38 @@
 <p>This is the reunion {{reunionId}} on the project {{projectId}}.</p>
+
+
+<ul class="row">
+	<li ng-repeat="user in users" class="col-sm-3">
+		<div class="col-sm-11">	
+			<h4>{{ user.name }}</h4>
+			<p>{{ user.email }}</p>
+		</div>
+	</li>
+</ul>
+
+<table class="table table-hover">
+	<thead>
+		<tr>
+			<th>#</th>
+			<th>Name</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr ng-repeat="note in notes">
+				
+			<td>
+				<h4>{{note.id}}</h4>
+			</td>
+			<td>
+				<h4>{{note.name}}</h4>
+			</td>
+			<td>
+				<p ng-bind-html="note.desc"></p>
+			</td>
+
+		</tr>
+	</tbody>
+
+</table>

@@ -1,12 +1,12 @@
-<div>
+<div id="projectList">
   <h1>Projects list</h1>
   <ul class="row">
     <li ng-repeat="project in projects" class="col-sm-3">
-      <h2>
-        <a ng-href="#/project/{{project.id}}">
+      <a ng-href="#/project/{{project.id}}" class="col-sm-11 col-xs-offset-1">
+        <h2>
           {{project.name}}    
-        </a>
-      </h2>
+        </h2>
+      </a>
     </li>
   </ul>
 </div>

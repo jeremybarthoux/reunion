@@ -10,7 +10,8 @@
  */
 angular
   .module('gestionReunionAngularApp', [
-    'ngRoute'
+    'ngRoute',
+    'ngSanitize'
   ])
   .config(function ($routeProvider) {
     $routeProvider

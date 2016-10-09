@@ -9,6 +9,13 @@ Routes generator (project + reunion) then add params url (projectId + reunionId)
 
 ## Step 3 - 1.5H
 
-Reformat Header + Navigation + start login proccess
+Reformat Header + Navigation + Start login proccess (fake tokken)
 
+## Step 4 - 0.5H
+
+Login : verif form
+
+## Step 5 - 0.5H
+
+Reformat Metting view
 

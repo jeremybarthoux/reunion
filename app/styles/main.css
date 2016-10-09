@@ -5,12 +5,37 @@
   padding: 0.2em 0;
 }
 
+h1 {
+  font-size: 25px;
+  margin: 20px 0;
+}
+h2 {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
 body {
   padding: 0;
 }
-input.ng-invalid.ng-touched {
+
+#mainContainer input.ng-invalid.ng-touched {
   border-color: red;
 }
+#mainContainer li {
+  list-style: none;
+
+}
+#mainContainer li > * {
+  background-color: #f6f6f6;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#projectList h2 {
+  text-align: center;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .footer {
@@ -21,7 +46,7 @@ input.ng-invalid.ng-touched {
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
+  /*margin-bottom: 10px;*/
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
