@@ -8,7 +8,7 @@
  * Controller of the gestionReunionAngularApp
  */
 angular.module('gestionReunionAngularApp')
-  .controller('MainCtrl', function ($scope,$rootScope) {
+  .controller('MainCtrl', function ($scope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

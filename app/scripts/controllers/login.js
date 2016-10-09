@@ -15,8 +15,11 @@ angular.module('gestionReunionAngularApp')
       'Karma'
     ];
 
-    $scope.connect = function() {
-        $rootScope.tokken = true;
-        $location.path('/');
+    $scope.connect = function(user) {
+        console.log('suppose :: user data -> format -> xht -> compart to DB :: ',user);
+        if ($scope.connectForm.$valid) {
+            $rootScope.tokken = true;
+            $location.path('/');
+        }
     };
   });

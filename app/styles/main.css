@@ -8,7 +8,9 @@
 body {
   padding: 0;
 }
-
+input.ng-invalid.ng-touched {
+  border-color: red;
+}
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .footer {

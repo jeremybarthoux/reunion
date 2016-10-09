@@ -1,19 +1,32 @@
 <div>
-	<p>This is the projectt {{projectId}} view.</p>
+	<p>This is the project {{projectId}} view.</p>
 
-	<table class="table">
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Metting Name</th>
+				<th>Date</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr ng-repeat="reunion in reunions" ng-click="openReunion(reunion.id)">
+					
+				<td>
+					<p>{{reunion.id}}</p>
+				</td>
+				<td>
+					<a ng-href="#project/{{projectId}}/reunion/{{reunion.id}}">
+						{{reunion.name}}
+					</a>
+				</td>
+				<td>
+					<p>{{reunion.date}}</p>
+				</td>
 
-		<tr ng-repeat="reunion in reunions">
-			<td>
-				<a ng-href="#project/{{projectId}}/reunion/{{reunion.id}}">
-					{{reunion.name}}
-				</a>
-			</td>
-			<td>
-				<p>{{reunion.date}}</p>
-			</td>
-
-		</tr>
+			</tr>
+		</tbody>
 
 	</table>
 </div>

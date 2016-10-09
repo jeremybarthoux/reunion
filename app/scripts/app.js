@@ -53,13 +53,9 @@ angular
 
       $scope.isLogin = $rootScope.tokken ? true : false;
 
-      $scope.projectUrl = newPath.length > 1
-        ? {id:newPath[1], active:true}
-        : {id:null, active:false};
+      $scope.projectUrl = newPath.length > 1 ? {id:newPath[1], active:true} : {active:false};
 
-      $scope.reunionUrl = newPath.length > 3
-        ? {id:newPath[3], active:true}
-        : {id:null, active:false};
+      $scope.reunionUrl = newPath.length > 3 ? {id:newPath[3], active:true} : {active:false};
 
       $scope.isActive = function (page) {
         var isActive = false;
