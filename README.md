@@ -11,7 +11,7 @@ Routes generator (project + meeting) then add params url (projectId + meetingId)
 
 ## Step 3 - 1.5H
 
-Reformat Header + Navigation + Start login proccess (fake tokken)
+Reformat Header + Navigation + Start login proccess (fake token)
 
 ## Step 4 - 0.5H
 
